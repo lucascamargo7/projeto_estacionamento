@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ReportInfo.Created="07/15/2020 14:58:01" ReportInfo.Modified="07/15/2020 15:03:54" ReportInfo.CreatorVersion="1.2.47.0">
+  <Dictionary/>
+  <ReportPage Name="Page1">
+    <OverlayBand Name="Overlay" Width="718.2" Height="1047.06">
+      <ShapeObject Name="Shape1" Top="28.35" Width="718.2" Height="47.25" Border.Color="WhiteSmoke" Fill.Color="WhiteSmoke"/>
+      <TextObject Name="Text15" Left="9.45" Top="36.8" Width="396.9" Height="28.35" Text="Movimentação diaria" Font="Verdana, 15pt, style=Bold"/>
+      <TextObject Name="Text20" Top="103.95" Width="334.19" Height="18.9" Text="Movimentação analitica geral" Font="Verdana, 10pt, style=Bold"/>
+      <TextObject Name="Text70" Top="175.24" Width="61.66" Height="18.9" Text="PLACA" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text71" Left="76.15" Top="175.24" Width="90.01" Height="18.9" Text="DESCRIÇÃO" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text72" Left="246.25" Top="175.24" Width="47.08" Height="18.9" Text="TIPO" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text73" Left="293.5" Top="175.24" Width="122.68" Height="18.9" Text="ENTRADA   SAIDA" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text74" Left="416.35" Top="175.24" Width="56.53" Height="18.9" Text="HORAS" HorzAlign="Center" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text75" Left="491.95" Top="175.24" Width="71.31" Height="18.9" Text="VALOR" HorzAlign="Center" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text77" Left="621.7" Top="175.24" Width="93.01" Height="18.9" Text="VALOR PAGO" HorzAlign="Right" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text78" Top="150.34" Width="334.19" Height="18.9" Text="À vista" Font="Verdana, 10pt, style=Bold"/>
+      <TextObject Name="Text61" Top="194.19" Width="72.96" Height="18.9" Text="FFF-4764" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text62" Left="76.15" Top="194.19" Width="162.14" Height="19.44" Text="STRADA" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text63" Left="246.25" Top="194.19" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text64" Left="293.5" Top="194.19" Width="63.18" Height="18.9" Text="9:44" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text65" Left="416.35" Top="194.19" Width="57.31" Height="18.9" Text="1:24" Format="Time" Format.Format="t" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text66" Left="359.65" Top="194.19" Width="57.21" Height="18.9" Text="11:08" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text67" Left="491.95" Top="194.19" Width="72.09" Height="18.9" Text="R$ 7,50" Format="Currency" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text69" Left="621.7" Top="194.19" Width="93.79" Height="18.9" Text="R$ 7,50" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text61" Top="233.29" Width="72.96" Height="18.9" Text="NYC-8825" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text62" Left="76.15" Top="233.29" Width="162.14" Height="19.44" Text="FIESTA" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text63" Left="246.25" Top="233.29" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text64" Left="293.5" Top="233.29" Width="63.18" Height="18.9" Text="10:48" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text65" Left="416.35" Top="233.29" Width="57.31" Height="18.9" Text="0:49" Format="Time" Format.Format="t" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text66" Left="359.65" Top="233.29" Width="57.21" Height="18.9" Text="11:37" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text67" Left="491.95" Top="233.29" Width="72.09" Height="18.9" Text="R$ 5,00" Format="Currency" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text69" Left="621.7" Top="233.29" Width="93.79" Height="18.9" Text="R$ 5,00" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text61" Top="252.84" Width="72.96" Height="18.9" Text="OJJ-4724" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text62" Left="76.15" Top="252.84" Width="162.14" Height="19.44" Text="TOYOTA" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text63" Left="246.25" Top="252.84" Width="47.33" Height="18.9" Text="SUV" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text64" Left="293.5" Top="252.84" Width="63.18" Height="18.9" Text="9:55" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text65" Left="416.35" Top="252.84" Width="57.31" Height="18.9" Text="3:17" Format="Time" Format.Format="t" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text66" Left="359.65" Top="252.84" Width="57.21" Height="18.9" Text="13:13" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text67" Left="491.95" Top="252.84" Width="72.09" Height="18.9" Text="R$ 27,50" Format="Currency" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text69" Left="621.7" Top="252.84" Width="93.79" Height="18.9" Text="R$ 27,50" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text61" Top="272.39" Width="72.96" Height="18.9" Text="FYE-6979" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text62" Left="76.15" Top="272.39" Width="162.14" Height="19.44" Text="HONDA" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text63" Left="246.25" Top="272.39" Width="47.33" Height="18.9" Text="MOTO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text64" Left="293.5" Top="272.39" Width="63.18" Height="18.9" Text="11:34" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text65" Left="416.35" Top="272.39" Width="57.31" Height="18.9" Text="0:19" Format="Time" Format.Format="t" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text66" Left="359.65" Top="272.39" Width="57.21" Height="18.9" Text="11:53" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text67" Left="491.95" Top="272.39" Width="72.09" Height="18.9" Text="R$ 3,00" Format="Currency" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text69" Left="621.7" Top="272.39" Width="93.79" Height="18.9" Text="R$ 3,00" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text61" Top="291.94" Width="72.96" Height="18.9" Text="CND-2971" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text62" Left="85.6" Top="291.94" Width="162.14" Height="19.44" Text="FIAT" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text63" Left="246.25" Top="291.94" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text64" Left="293.5" Top="291.94" Width="63.18" Height="18.9" Text="11:21" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text65" Left="416.35" Top="291.94" Width="57.31" Height="18.9" Text="0:39" Format="Time" Format.Format="t" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text66" Left="359.65" Top="291.94" Width="57.21" Height="18.9" Text="12:02" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text67" Left="491.95" Top="291.94" Width="72.09" Height="18.9" Text="R$ 5,00" Format="Currency" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text69" Left="621.7" Top="291.94" Width="93.79" Height="18.9" Text="R$ 5,00" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text61" Top="389.69" Width="72.96" Height="18.9" Text="FFH-9659" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text62" Left="76.15" Top="389.69" Width="162.14" Height="19.44" Text="PALIO" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text63" Left="246.25" Top="389.69" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text64" Left="293.5" Top="389.69" Width="63.18" Height="18.9" Text="13:07" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text65" Left="416.35" Top="389.69" Width="57.31" Height="18.9" Text="0:41" Format="Time" Format.Format="t" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text66" Left="359.65" Top="389.69" Width="57.21" Height="18.9" Text="13:48" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text67" Left="491.95" Top="389.69" Width="72.09" Height="18.9" Text="R$ 5,00" Format="Currency" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text69" Left="621.7" Top="389.69" Width="93.79" Height="18.9" Text="R$ 5,00" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text61" Top="409.24" Width="72.96" Height="18.9" Text="FRZ-8097" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text62" Left="76.15" Top="409.24" Width="162.14" Height="19.44" Text="RENAULT" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text63" Left="246.25" Top="409.24" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text64" Left="293.5" Top="409.24" Width="63.18" Height="18.9" Text="11:50" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text65" Left="416.35" Top="409.24" Width="57.31" Height="18.9" Text="1:01" Format="Time" Format.Format="t" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text66" Left="359.65" Top="409.24" Width="57.21" Height="18.9" Text="12:51" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text67" Left="491.95" Top="409.24" Width="72.09" Height="18.9" Text="R$ 5,00" Format="Currency" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text69" Left="621.7" Top="409.24" Width="93.79" Height="18.9" Text="R$ 5,00" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text61" Top="448.34" Width="72.96" Height="18.9" Text="NEX-2694" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text62" Left="76.15" Top="448.34" Width="162.14" Height="19.44" Text="HILLUXSW4" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text63" Left="246.25" Top="448.34" Width="47.33" Height="18.9" Text="SUV" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text64" Left="293.5" Top="448.34" Width="63.18" Height="18.9" Text="11:29" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text65" Left="416.35" Top="448.34" Width="57.31" Height="18.9" Text="0:14" Format="Time" Format.Format="t" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text66" Left="359.65" Top="448.34" Width="57.21" Height="18.9" Text="11:43" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text67" Left="491.95" Top="448.34" Width="72.09" Height="18.9" Text="R$ 4,00" Format="Currency" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text69" Left="621.7" Top="448.34" Width="93.79" Height="18.9" Text="R$ 4,00" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text61" Top="467.89" Width="72.96" Height="18.9" Text="JKC-2076" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text62" Left="76.15" Top="467.89" Width="162.14" Height="19.44" Text="ASX" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text63" Left="246.25" Top="467.89" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text64" Left="293.5" Top="467.89" Width="63.18" Height="18.9" Text="12:26" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text65" Left="416.35" Top="467.89" Width="57.31" Height="18.9" Text="0:18" Format="Time" Format.Format="t" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text66" Left="359.65" Top="467.89" Width="57.21" Height="18.9" Text="12:44" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text67" Left="491.95" Top="467.89" Width="72.09" Height="18.9" Text="R$ 3,00" Format="Currency" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text69" Left="621.7" Top="467.89" Width="93.79" Height="18.9" Text="R$ 3,00" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text61" Top="487.44" Width="72.96" Height="18.9" Text="FCL-4008" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text62" Left="76.15" Top="487.44" Width="162.14" Height="19.44" Text="TOYOTA" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text63" Left="246.25" Top="487.44" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text64" Left="293.5" Top="487.44" Width="63.18" Height="18.9" Text="13:57" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text65" Left="416.35" Top="487.44" Width="57.31" Height="18.9" Text="0:22" Format="Time" Format.Format="t" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text66" Left="359.65" Top="487.44" Width="57.21" Height="18.9" Text="14:19" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text67" Left="491.95" Top="487.44" Width="72.09" Height="18.9" Text="R$ 3,00" Format="Currency" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text69" Left="621.7" Top="487.44" Width="93.79" Height="18.9" Text="R$ 3,00" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text61" Top="506.99" Width="72.96" Height="18.9" Text="FUY-0878" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text62" Left="76.15" Top="506.99" Width="162.14" Height="19.44" Text="GOL" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text63" Left="246.25" Top="506.99" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text64" Left="293.5" Top="506.99" Width="63.18" Height="18.9" Text="14:45" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text65" Left="416.35" Top="506.99" Width="57.31" Height="18.9" Text="0:08" Format="Time" Format.Format="t" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text66" Left="359.65" Top="506.99" Width="57.21" Height="18.9" Text="14:53" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text67" Left="491.95" Top="506.99" Width="72.09" Height="18.9" Text="R$ 2,00" Format="Currency" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text69" Left="621.7" Top="506.99" Width="93.79" Height="18.9" Text="R$ 2,00" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text1" Left="555.55" Top="526.54" Width="160.65" Height="18.9" Text="R$ 145,00" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text83" Left="-0.87" Top="589.91" Width="61.66" Height="18.9" Text="PLACA" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text84" Left="76.18" Top="589.91" Width="90.01" Height="18.9" Text="DESCRIÇÃO" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text85" Left="235.38" Top="589.91" Width="47.08" Height="18.9" Text="TIPO" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text86" Left="292.08" Top="589.91" Width="69.24" Height="18.9" Text="ENTRADA" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text87" Left="367.68" Top="589.91" Width="173.19" Height="18.9" Text="MOTIVO CANCELAMENTO" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text89" Left="-0.01" Top="564.34" Width="334.19" Height="18.9" Text="Cancelamentos" Font="Verdana, 10pt, style=Bold"/>
+      <TextObject Name="Text79" Top="609.83" Width="70.35" Height="18.9" Text="DSG-6403" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text80" Left="77.05" Top="609.83" Width="136.5" Height="19.44" Text="STRADA" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text81" Left="236.25" Top="609.83" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text82" Left="292.95" Top="609.83" Width="69.2" Height="18.9" Text="9:28" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text88" Left="368.55" Top="609.83" Width="221.55" Height="19.44" Text="ER" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text79" Top="632.14" Width="70.35" Height="18.9" Text="OJJ-4724" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text80" Left="77.05" Top="632.14" Width="136.5" Height="19.44" Text="TOYOTA" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text81" Left="236.25" Top="632.14" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text82" Left="292.95" Top="632.14" Width="69.2" Height="18.9" Text="9:55" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text88" Left="368.55" Top="632.14" Width="221.55" Height="19.44" Text="ER" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text79" Top="654.45" Width="70.35" Height="18.9" Text="OJJ-4724" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text80" Left="77.05" Top="654.45" Width="136.5" Height="19.44" Text="TOYOTA" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text81" Left="236.25" Top="654.45" Width="47.33" Height="18.9" Text="SUV" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text82" Left="292.95" Top="654.45" Width="69.2" Height="18.9" Text="9:55" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text88" Left="368.55" Top="654.45" Width="221.55" Height="19.44" Text="ER" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text79" Top="676.76" Width="70.35" Height="18.9" Text="CND-2971" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text80" Left="77.05" Top="676.76" Width="136.5" Height="19.44" Text="FIAT" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text81" Left="236.25" Top="676.76" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text82" Left="292.95" Top="676.76" Width="69.2" Height="18.9" Text="11:21" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text88" Left="368.55" Top="676.76" Width="221.55" Height="19.44" Text="ERRO" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text79" Top="699.07" Width="70.35" Height="18.9" Text="CND-2971" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text80" Left="77.05" Top="699.07" Width="136.5" Height="19.44" Text="FIAT" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text81" Left="236.25" Top="699.07" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text82" Left="292.95" Top="699.07" Width="69.2" Height="18.9" Text="11:21" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text88" Left="368.55" Top="699.07" Width="221.55" Height="19.44" Text="ERRO" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text79" Top="721.38" Width="70.35" Height="18.9" Text="CND-2971" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text80" Left="77.05" Top="721.38" Width="136.5" Height="19.44" Text="FIAT" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text81" Left="236.25" Top="721.38" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text82" Left="292.95" Top="721.38" Width="69.2" Height="18.9" Text="11:22" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text88" Left="368.55" Top="721.38" Width="221.55" Height="19.44" Text="ERRO" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text79" Top="743.69" Width="70.35" Height="18.9" Text="EAD-3505" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text80" Left="77.05" Top="743.69" Width="136.5" Height="19.44" Text="FLUENCE" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text81" Left="236.25" Top="743.69" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text82" Left="292.95" Top="743.69" Width="69.2" Height="18.9" Text="13:55" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text88" Left="368.55" Top="743.69" Width="221.55" Height="19.44" Text="TESTE" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text79" Top="766" Width="70.35" Height="18.9" Text="FNP-1210" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text80" Left="77.05" Top="766" Width="136.5" Height="19.44" Text="HONDA" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text81" Left="236.25" Top="766" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text82" Left="292.95" Top="766" Width="69.2" Height="18.9" Text="13:41" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text88" Left="368.55" Top="766" Width="221.55" Height="19.44" Text="CONVENCIA" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text79" Top="788.31" Width="70.35" Height="18.9" Text="EAD-3505" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text80" Left="77.05" Top="788.31" Width="136.5" Height="19.44" Text="FLUENCE" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text81" Left="236.25" Top="788.31" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text82" Left="292.95" Top="788.31" Width="69.2" Height="18.9" Text="13:55" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text88" Left="368.55" Top="788.31" Width="221.55" Height="19.44" Text="TESTE" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text79" Top="810.62" Width="70.35" Height="18.9" Text="GEX-3230" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text80" Left="77.05" Top="810.62" Width="136.5" Height="19.44" Text="PRISMA" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text81" Left="236.25" Top="810.62" Width="47.33" Height="18.9" Text="CARRO" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text82" Left="292.95" Top="810.62" Width="69.2" Height="18.9" Text="13:03" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text88" Left="368.55" Top="810.62" Width="221.55" Height="19.44" Text="LAVAGEM" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+    </OverlayBand>
+  </ReportPage>
+</Report>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ReportInfo.Created="04/07/2018 13:12:51" ReportInfo.Modified="04/07/2018 13:26:51" ReportInfo.CreatorVersion="1.2.47.0">
+  <Dictionary>
+    <FirebirdDataConnection Name="Connection" ConnectionString="rijcmlqGXDUjVHoOo39U7VHz/cohboC87uIIffsgzROmdYrsozDp8VYTB15xlcxnymP/tQRLqAxawvep4PAX6U9ZTRXNO5xLiW1/uvr3PNpvILCumcMcR7KFaNIPP27P43dvxLmJIyxo9YHM8d1Sc5ZOzp9IQ==">
+      <TableDataSource Name="Table" Alias="MovGeral" DataType="System.Int32" Enabled="true" SelectCommand="select placa, descricao, tipo, data, entrada, saida, total_horas, total from movimentacao where saida is not null">
+        <Column Name="PLACA" DataType="System.String"/>
+        <Column Name="DESCRICAO" DataType="System.String"/>
+        <Column Name="TIPO" DataType="System.String"/>
+        <Column Name="DATA" DataType="System.DateTime"/>
+        <Column Name="ENTRADA" DataType="System.DateTime"/>
+        <Column Name="SAIDA" DataType="System.DateTime"/>
+        <Column Name="TOTAL_HORAS" DataType="System.DateTime"/>
+        <Column Name="TOTAL" DataType="System.Decimal"/>
+      </TableDataSource>
+    </FirebirdDataConnection>
+    <Total Name="Total" Expression="[MovGeral.TOTAL]" Evaluator="Data1" PrintOn="ReportSummary1"/>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="112.54">
+      <ShapeObject Name="Shape1" Top="28.35" Width="718.2" Height="47.25" Border.Color="WhiteSmoke" Fill.Color="WhiteSmoke"/>
+      <TextObject Name="Text15" Left="9.45" Top="36.8" Width="396.9" Height="28.35" Text="Movimentação diaria" Font="Verdana, 15pt, style=Bold"/>
+      <TextObject Name="Text20" Left="11.18" Top="84.19" Width="334.19" Height="18.9" Text="Movimentação analitica geral" Font="Verdana, 10pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="115.99" Width="718.2" Height="28.35">
+      <TextObject Name="Text21" Left="6.01" Top="5.45" Width="73.89" Height="18.9" Text="Placa" Font="Verdana, 9pt, style=Bold"/>
+      <TextObject Name="Text22" Left="85.05" Top="5.45" Width="85.05" Height="18.9" Text="Descrição	" Font="Verdana, 9pt, style=Bold"/>
+      <TextObject Name="Text23" Left="257.73" Top="5.45" Width="56.7" Height="18.9" Text="Tipo		" Font="Verdana, 9pt, style=Bold"/>
+      <TextObject Name="Text25" Left="401.71" Top="5.08" Width="75.6" Height="18.9" Text="Saida" HorzAlign="Center" Font="Verdana, 9pt, style=Bold"/>
+      <TextObject Name="Text27" Left="489.68" Top="5.45" Width="88.48" Height="18.9" Text="Total horas" HorzAlign="Center" Font="Verdana, 9pt, style=Bold"/>
+      <TextObject Name="Text28" Left="585.9" Top="5.45" Width="113.4" Height="18.9" Text="Valor (R$)" HorzAlign="Right" Font="Verdana, 9pt, style=Bold"/>
+      <TextObject Name="Text29" Left="318.96" Top="5.57" Width="75.6" Height="18.9" Text="Entrada" HorzAlign="Center" Font="Verdana, 9pt, style=Bold"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="147.79" Width="718.2" Height="20.43" DataSource="Table">
+      <TextObject Name="Text1" Left="6.01" Width="73.89" Height="18.9" Text="[MovGeral.PLACA]" Font="Verdana, 9pt"/>
+      <TextObject Name="Text3" Left="85.05" Width="167.53" Height="18.9" Text="[MovGeral.DESCRICAO]" Font="Verdana, 9pt"/>
+      <TextObject Name="Text5" Left="257.73" Width="56.7" Height="18.9" Text="[MovGeral.TIPO]" Font="Verdana, 9pt"/>
+      <TextObject Name="Text7" Left="318.85" Width="75.6" Height="18.9" Text="[MovGeral.ENTRADA]" Format="Time" Format.Format="t" HorzAlign="Center" Font="Verdana, 9pt"/>
+      <TextObject Name="Text11" Left="489.68" Width="88.48" Height="18.9" Text="[MovGeral.TOTAL_HORAS]" Format="Time" Format.Format="t" HorzAlign="Center" Font="Verdana, 9pt, style=Bold"/>
+      <TextObject Name="Text13" Left="585.9" Width="113.4" Height="18.9" Text="[MovGeral.TOTAL]" Format="Currency" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Verdana, 9pt" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text26" Left="401.71" Top="-0.37" Width="75.6" Height="18.9" Text="[MovGeral.SAIDA]" Format="Time" Format.Format="t" HorzAlign="Center" Font="Verdana, 9pt"/>
+    </DataBand>
+    <ReportSummaryBand Name="ReportSummary1" Top="171.66" Width="718.2" Height="37.8">
+      <TextObject Name="Text2" Left="538.65" Top="9.45" Width="160.65" Height="18.9" Text="[Total]" Format="Currency" Format.UseLocale="true" HorzAlign="Right" Font="Verdana, 9.75pt, style=Bold"/>
+    </ReportSummaryBand>
+    <PageFooterBand Name="PageFooter1" Top="212.91" Width="718.2" Height="28.35"/>
+  </ReportPage>
+</Report>

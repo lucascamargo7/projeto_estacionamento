@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ReportInfo.Created="11/06/2020 15:52:08" ReportInfo.Modified="11/06/2020 15:55:50" ReportInfo.CreatorVersion="1.2.47.0">
+  <Dictionary>
+    <FirebirdDataConnection Name="Connection" ConnectionString="rijcmlqGXDUjVHoOo39U7VHz/cohboC87uIIffsgzROmdYrsozDp8VYTB15xlcxnymP/tQRLqAxawvep4PAX6U9ZTRXNO5xLiW1/uvr3PNpvILCumcMcR7KFaNIPP27P43dvxLm5KfSkkp8otsGi/6ccF2mSw==">
+      <TableDataSource Name="Table" Alias="MovGeral" DataType="System.Int32" Enabled="true" SelectCommand="select placa, descricao, tipo, data, entrada, saida, total_horas, total from movimentacao where saida is not null">
+        <Column Name="PLACA" DataType="System.String"/>
+        <Column Name="DESCRICAO" DataType="System.String"/>
+        <Column Name="TIPO" DataType="System.String"/>
+        <Column Name="DATA" DataType="System.DateTime"/>
+        <Column Name="ENTRADA" DataType="System.DateTime"/>
+        <Column Name="SAIDA" DataType="System.DateTime"/>
+        <Column Name="TOTAL_HORAS" DataType="System.DateTime"/>
+        <Column Name="TOTAL" DataType="System.Decimal"/>
+      </TableDataSource>
+    </FirebirdDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="113.4">
+      <ShapeObject Name="Shape1" Left="-9.45" Top="18.9" Width="718.2" Height="47.25" Border.Color="WhiteSmoke" Fill.Color="WhiteSmoke"/>
+      <TextObject Name="Text15" Top="27.35" Width="396.9" Height="28.35" Text="Movimentação diaria" Font="Verdana, 15pt, style=Bold"/>
+      <TextObject Name="Text20" Left="1.73" Top="74.74" Width="334.19" Height="18.9" Text="Movimentação analitica geral" Font="Verdana, 10pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="117.4" Width="718.2" Height="28.35">
+      <TextObject Name="Text2" Left="9.45" Width="94.5" Height="18.9" Text="PLACA"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="149.75" Width="718.2" Height="75.6" DataSource="Table">
+      <TextObject Name="Text1" Left="9.45" Top="9.45" Width="94.5" Height="18.9" Text="[MovGeral.PLACA]"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="229.35" Width="718.2" Height="18.9"/>
+  </ReportPage>
+</Report>

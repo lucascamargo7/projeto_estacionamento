@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ReportInfo.Created="04/07/2018 13:12:51" ReportInfo.Modified="04/19/2018 14:06:59" ReportInfo.CreatorVersion="1.2.47.0">
+  <Dictionary>
+    <FirebirdDataConnection Name="Connection" ConnectionString="rijcmlqGXDUjVHoOo39U7VHz/cohboC87uIIffsgzROmdYrsozDp8VYTB15xlcxnymP/tQRLqAxawvep4PAX6U9ZTRXNO5xLiW1/uvr3PNpvILCumcMcR7KFaNIPP27P43dvxLmetzsWBnxjWpJHnoqwA+zQg==">
+      <TableDataSource Name="Table" Alias="MovGeral" DataType="System.Int32" Enabled="true" SelectCommand="select placa, descricao, tipo, data, entrada, saida, total_horas, total, valor_pago from movimentacao where saida is not null and data=@inicio">
+        <Column Name="PLACA" DataType="System.String"/>
+        <Column Name="DESCRICAO" DataType="System.String"/>
+        <Column Name="TIPO" DataType="System.String"/>
+        <Column Name="DATA" DataType="System.DateTime"/>
+        <Column Name="ENTRADA" DataType="System.DateTime"/>
+        <Column Name="SAIDA" DataType="System.DateTime"/>
+        <Column Name="TOTAL_HORAS" DataType="System.DateTime"/>
+        <Column Name="TOTAL" DataType="System.Decimal"/>
+        <Column Name="VALOR_PAGO" DataType="System.Decimal"/>
+        <CommandParameter Name="@inicio" Expression="[inicio]" DefaultValue="01/01/2000"/>
+      </TableDataSource>
+      <TableDataSource Name="Table1" Alias="movConvenio" DataType="System.Int32" Enabled="true" SelectCommand="select placa, descricao, entrada, tipo,saida, total_horas, total, nome_convenio, valor_convenio from movimentacao&#13;&#10;where convenio = 1 and data = @inicio">
+        <Column Name="PLACA" DataType="System.String"/>
+        <Column Name="DESCRICAO" DataType="System.String"/>
+        <Column Name="ENTRADA" DataType="System.DateTime"/>
+        <Column Name="SAIDA" DataType="System.DateTime"/>
+        <Column Name="TOTAL_HORAS" DataType="System.DateTime"/>
+        <Column Name="TOTAL" DataType="System.Decimal"/>
+        <Column Name="NOME_CONVENIO" DataType="System.String"/>
+        <Column Name="VALOR_CONVENIO" DataType="System.Decimal"/>
+        <Column Name="TIPO" DataType="System.String"/>
+        <CommandParameter Name="@inicio" Expression="[inicio]" DefaultValue="01/01/2000"/>
+      </TableDataSource>
+      <TableDataSource Name="Table2" Alias="movCancelado" DataType="System.Int32" Enabled="true" SelectCommand="select placa, descricao, entrada, tipo, motivo_cancelamento from movimentacao&#13;&#10;where cancelamento = 1 and data = @inicio">
+        <Column Name="PLACA" DataType="System.String"/>
+        <Column Name="DESCRICAO" DataType="System.String"/>
+        <Column Name="ENTRADA" DataType="System.DateTime"/>
+        <Column Name="MOTIVO_CANCELAMENTO" DataType="System.String"/>
+        <Column Name="TIPO" DataType="System.String"/>
+        <CommandParameter Name="@inicio" Expression="[inicio]" DefaultValue="01/01/2000"/>
+      </TableDataSource>
+    </FirebirdDataConnection>
+    <Parameter Name="inicio" DataType="System.String"/>
+    <Total Name="Total" Expression="[MovGeral.VALOR_PAGO]" Evaluator="Data1" PrintOn="DataFooter2"/>
+    <Total Name="totalConvenio" Expression="[movConvenio.VALOR_CONVENIO]" Evaluator="Data1" PrintOn="DataFooter1"/>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="131.44">
+      <ShapeObject Name="Shape1" Top="28.35" Width="718.2" Height="47.25" Border.Color="WhiteSmoke" Fill.Color="WhiteSmoke"/>
+      <TextObject Name="Text15" Left="9.45" Top="36.8" Width="396.9" Height="28.35" Text="Movimentação diaria" Font="Verdana, 15pt, style=Bold"/>
+      <TextObject Name="Text20" Top="103.95" Width="334.19" Height="18.9" Text="Movimentação analitica geral" Font="Verdana, 10pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="134.89" Width="718.2" Height="18.9"/>
+    <DataBand Name="Data1" Top="204.53" Width="718.2" Height="19.55" DataSource="Table">
+      <TextObject Name="Text61" Width="72.96" Height="18.9" Text="[MovGeral.PLACA]" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text62" Left="76.15" Width="162.14" Height="19.44" Text="[MovGeral.DESCRICAO]" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text63" Left="246.25" Width="47.33" Height="18.9" Text="[MovGeral.TIPO]" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text64" Left="293.5" Width="63.18" Height="18.9" Text="[MovGeral.ENTRADA]" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text65" Left="416.35" Width="57.31" Height="18.9" Text="[MovGeral.TOTAL_HORAS]" Format="Time" Format.Format="t" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text66" Left="359.65" Width="57.21" Height="18.9" Text="[MovGeral.SAIDA]" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text67" Left="491.95" Width="72.09" Height="18.9" Text="[MovGeral.TOTAL]" Format="Currency" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text69" Left="621.7" Width="93.79" Height="18.9" Text="[MovGeral.VALOR_PAGO]" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Verdana, 8pt"/>
+      <DataHeaderBand Name="DataHeader2" Top="157.24" Width="718.2" Height="43.85">
+        <TextObject Name="Text70" Top="24.9" Width="61.66" Height="18.9" Text="PLACA" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text71" Left="76.15" Top="24.9" Width="90.01" Height="18.9" Text="DESCRIÇÃO" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text72" Left="246.25" Top="24.9" Width="47.08" Height="18.9" Text="TIPO" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text73" Left="293.5" Top="24.9" Width="122.68" Height="18.9" Text="ENTRADA   SAIDA" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text74" Left="416.35" Top="24.9" Width="56.53" Height="18.9" Text="HORAS" HorzAlign="Center" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text75" Left="491.95" Top="24.9" Width="71.31" Height="18.9" Text="VALOR" HorzAlign="Center" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text77" Left="621.7" Top="24.9" Width="93.01" Height="18.9" Text="VALOR PAGO" HorzAlign="Right" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text78" Width="334.19" Height="18.9" Text="À vista" Font="Verdana, 10pt, style=Bold"/>
+      </DataHeaderBand>
+      <DataFooterBand Name="DataFooter2" Top="227.53" Width="718.2" Height="37.8">
+        <TextObject Name="Text1" Left="555.55" Width="160.65" Height="18.9" Text="[Total]" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      </DataFooterBand>
+    </DataBand>
+    <DataBand Name="Data2" Top="323.72" Width="718.2" Height="21.53" DataSource="Table1">
+      <TextObject Name="Text2" Top="2" Width="67.79" Height="18.9" Text="[movConvenio.PLACA]" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text46" Left="75.1" Top="1.77" Width="115.88" Height="19.44" Text="[movConvenio.DESCRICAO]" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text49" Left="191.28" Top="2" Width="47.33" Height="18.9" Text="[movConvenio.TIPO]" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text50" Left="242.08" Top="2" Width="63.18" Height="18.9" Text="[movConvenio.ENTRADA]" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text52" Left="359.75" Top="2" Width="57.31" Height="18.9" Text="[movConvenio.TOTAL_HORAS]" Format="Time" Format.Format="t" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt, style=Bold"/>
+      <TextObject Name="Text53" Left="302.75" Top="1.93" Width="57.21" Height="18.9" Text="[movConvenio.ENTRADA]" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text55" Left="416.45" Top="2" Width="72.09" Height="18.9" Text="[movConvenio.TOTAL]" Format="Currency" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text57" Left="491.55" Top="2" Width="128.04" Height="18.9" Text="[movConvenio.NOME_CONVENIO]" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text59" Left="621.67" Top="2" Width="93.79" Height="18.9" Text="[movConvenio.VALOR_CONVENIO]" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Verdana, 8pt"/>
+      <DataHeaderBand Name="DataHeader1" Top="268.78" Width="718.2" Height="51.49">
+        <TextObject Name="Text45" Top="3.9" Width="334.19" Height="18.9" Text="Convênio" Font="Verdana, 10pt, style=Bold"/>
+        <TextObject Name="Text36" Top="32.25" Width="61.66" Height="18.9" Text="PLACA" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text47" Left="75.81" Top="32.25" Width="90.01" Height="18.9" Text="DESCRIÇÃO" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text48" Left="190.66" Top="32.25" Width="47.08" Height="18.9" Text="TIPO" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text51" Left="237.91" Top="32.25" Width="122.68" Height="18.9" Text="ENTRADA   SAIDA" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text54" Left="360.76" Top="32.25" Width="56.53" Height="18.9" Text="HORAS" HorzAlign="Center" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text56" Left="417.46" Top="32.25" Width="71.31" Height="18.9" Text="VALOR" HorzAlign="Center" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text58" Left="492.56" Top="32.25" Width="84.88" Height="18.9" Text="CONVÊNIO" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text60" Left="622.68" Top="32.25" Width="93.01" Height="18.9" Text="VALOR PAGO" HorzAlign="Right" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      </DataHeaderBand>
+      <DataFooterBand Name="DataFooter1" Top="348.7" Width="718.2" Height="37.8">
+        <TextObject Name="Text4" Left="557.41" Width="158.08" Height="18.9" Text="[totalConvenio]" Format="Currency" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+      </DataFooterBand>
+    </DataBand>
+    <DataBand Name="Data3" Top="438.88" Width="718.2" Height="22.31" DataSource="Table2">
+      <TextObject Name="Text79" Width="70.35" Height="18.9" Text="[movCancelado.PLACA]" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text80" Left="77.05" Width="136.5" Height="19.44" Text="[movCancelado.DESCRICAO]" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <TextObject Name="Text81" Left="236.25" Width="47.33" Height="18.9" Text="[movCancelado.TIPO]" VertAlign="Center" Font="Verdana, 8pt"/>
+      <TextObject Name="Text82" Left="292.95" Width="69.2" Height="18.9" Text="[movCancelado.ENTRADA]" HorzAlign="Center" VertAlign="Center" Font="Verdana, 8pt">
+        <Formats>
+          <TimeFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text88" Left="368.55" Width="221.55" Height="19.44" Text="[movCancelado.MOTIVO_CANCELAMENTO]" VertAlign="Center" WordWrap="false" Font="Verdana, 8pt"/>
+      <DataHeaderBand Name="DataHeader3" Top="389.95" Width="718.2" Height="45.49">
+        <TextObject Name="Text83" Left="-0.87" Top="25.57" Width="61.66" Height="18.9" Text="PLACA" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text84" Left="76.18" Top="25.57" Width="90.01" Height="18.9" Text="DESCRIÇÃO" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text85" Left="235.38" Top="25.57" Width="47.08" Height="18.9" Text="TIPO" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text86" Left="292.08" Top="25.57" Width="69.24" Height="18.9" Text="ENTRADA" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text87" Left="367.68" Top="25.57" Width="173.19" Height="18.9" Text="MOTIVO CANCELAMENTO" VertAlign="Bottom" Font="Verdana, 8pt, style=Bold"/>
+        <TextObject Name="Text89" Left="-0.01" Width="334.19" Height="18.9" Text="Cancelamentos" Font="Verdana, 10pt, style=Bold"/>
+      </DataHeaderBand>
+      <DataFooterBand Name="DataFooter3" Top="464.64" Width="718.2" Height="28.35"/>
+    </DataBand>
+    <ReportSummaryBand Name="ReportSummary1" Top="496.44" Width="718.2" Height="37.8"/>
+    <PageFooterBand Name="PageFooter1" Top="537.69" Width="718.2" Height="28.35"/>
+  </ReportPage>
+  <DialogPage Name="Form1" Width="298" Height="134" AcceptButton="btnOk" CancelButton="btnCancel">
+    <ButtonControl Name="btnCancel" Left="193" Top="71" Anchor="Bottom, Right" Font="Tahoma, 8pt" TabIndex="0" Text="Cancel" DialogResult="Cancel"/>
+    <ButtonControl Name="btnOk" Left="110" Top="71" Anchor="Bottom, Right" Font="Tahoma, 8pt" TabIndex="1" Text="OK" DialogResult="OK"/>
+    <LabelControl Name="Label1" Left="8" Top="28" Width="152" Height="14" Font="Verdana, 9pt" TabIndex="2" Text="Data da movimentação"/>
+    <DateTimePickerControl Name="DateTimePicker1" Left="168" Top="24" Width="96" Font="Tahoma, 8pt" TabIndex="3" Text="07/04/2018" ReportParameter="inicio" Format="Short" Value="04/07/2018 13:30:06"/>
+  </DialogPage>
+</Report>
